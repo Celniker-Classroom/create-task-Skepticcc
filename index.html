@@ -28,21 +28,44 @@
     <div class="container">
         <div class="add-expense">
             <h2>Add Expense</h2>
-            <input type="number" id="amount" placeholder="Amount" step="0.01">
-            <input type="text" id="category" placeholder="Category">
+            <input type="number" id="amount" placeholder="Amount" step="0.01" min="0">
+            <select id="category">
+                <option value="">Select Category</option>
+                <option value="Food">Food</option>
+                <option value="Transportation">Transportation</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Utilities">Utilities</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="date" id="date">
             <button id="addBtn">Add Expense</button>
         </div>
         
         <div class="expense-list">
             <h2>Expenses</h2>
             <ul id="expenses"></ul>
+            <button id="clearAllBtn">Clear All Expenses</button>
         </div>
         
         <div class="budget-check">
-            <h2>Check Budget</h2>
-            <input type="number" id="budgetLimit" placeholder="Budget Limit" step="0.01">
+            <h2>Budget Analysis</h2>
+            <input type="number" id="budgetLimit" placeholder="Budget Limit" step="0.01" min="0">
             <button id="calculateBtn">Calculate Total</button>
             <div id="result"></div>
+        </div>
+        
+        <div class="summary">
+            <h2>Summary</h2>
+            <div id="summaryStats"></div>
+            <select id="filterCategory">
+                <option value="">All Categories</option>
+                <option value="Food">Food</option>
+                <option value="Transportation">Transportation</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Utilities">Utilities</option>
+                <option value="Other">Other</option>
+            </select>
+            <button id="filterBtn">Filter Expenses</button>
         </div>
     </div>
 </body>
