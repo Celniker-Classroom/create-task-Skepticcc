@@ -2,12 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Budget Tracker</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Your html goes here...</h1>
-    <br>See the <a href="README.md">README</a> for project details
+    <!--
+    Detailed Project Description:
+
+    This project is a budget tracking application designed to help users monitor their spending by category and determine if they are exceeding their predefined budget limit. The application allows users to input expense amounts and their corresponding categories, store them in lists, and calculate the total expenses to compare against a budget limit. Key features include adding expenses, displaying the list of expenses, setting a budget limit, and checking if the total spending exceeds the budget.
+
+    Technical Implementation:
+
+    - Uses HTML for the user interface with input fields for amount and category, buttons for adding expenses and calculating totals.
+
+    - JavaScript handles the logic: arrays for expenseAmounts and expenseCategories, functions to add expenses and calculate totals with budget check.
+
+    - CSS for basic styling to make it visually appealing.
+
+    The calculateTotal function iterates through the expenseAmounts list, sums the values, and uses an if statement to check if the sum exceeds the budgetLimit parameter, displaying appropriate messages.
+    -->
+
+    <h1>Budget Tracker</h1>
+    
+    <div class="container">
+        <div class="add-expense">
+            <h2>Add Expense</h2>
+            <input type="number" id="amount" placeholder="Amount" step="0.01">
+            <input type="text" id="category" placeholder="Category">
+            <button id="addBtn">Add Expense</button>
+        </div>
+        
+        <div class="expense-list">
+            <h2>Expenses</h2>
+            <ul id="expenses"></ul>
+        </div>
+        
+        <div class="budget-check">
+            <h2>Check Budget</h2>
+            <input type="number" id="budgetLimit" placeholder="Budget Limit" step="0.01">
+            <button id="calculateBtn">Calculate Total</button>
+            <div id="result"></div>
+        </div>
+    </div>
 </body>
 </html>
