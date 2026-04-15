@@ -169,3 +169,8 @@ document.getElementById('filterBtn').addEventListener('click', function() {
     const category = document.getElementById('filterCategory').value;
     filterByCategory(category);
 });
+
+
+//added event listener for clear filter button through value function
+//increased incrmental dipsplay of expenses to 10/document.getleemnt laid down
+//used clearallBTN assortned to clear all expenses and reset filter
