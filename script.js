@@ -169,29 +169,3 @@ document.getElementById('filterBtn').addEventListener('click', function() {
     const category = document.getElementById('filterCategory').value;
     filterByCategory(category);
 });
-
-
-//added event listener for clear filter button through value function
-//increased incrmental dipsplay of expenses to 10/document.getleemnt laid down
-//used clearallBTN assortned to clear all expenses and reset filter
-
-
-//filter outline and document get id position
-// Function to delete a specific expense
-//function deleteExpense(index) {
-    //expenseAmounts.splice(index, 1);
-    //expenseCategories.splice(index, 1);
-   // expenseDates.splice(index, 1);
-   // saveExpenses();
-   // updateExpenseList();
-   // updateSummary();
-
-// Function to clear all expenses
-//function clearAllExpenses() {
-   // if (confirm('Are you sure you want to clear all expenses?')) {
-      //  expenseAmounts = [];
-       // expenseCategories = [];
-      //  expenseDates = [];
-        //saveExpenses();
-     //   updateExpenseList();
-      //  updateSummary();
