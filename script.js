@@ -301,3 +301,5 @@ document.getElementById('filterBtn').addEventListener('click', function() {
 document.getElementById('amount').addEventListener('keypress', function(e) {
     if (e.key === 'Enter') addExpense();
 });
+
+// added fundemntal ideas and eventlisteners to complete the functionality of the app, including saving to localStorage, filtering by category, and showing summary stats. The code is structured to be easy to read and maintain, with comments explaining each function's purpose.
